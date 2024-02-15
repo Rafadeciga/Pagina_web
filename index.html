@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Este es un documento HTML5">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <title>ComteDec</title>
+  <link rel="stylesheet" href="cssComteDec/adaptabletodos.css">
+  <script>
+    var visible = false;
+    function iniciar() {
+      var elemento = document.getElementById("menu-img");
+      elemento.addEventListener("click", mostrarMenu);
+    }
+    function mostrarMenu() {
+      var elemento = document.getElementById("menuprincipal");
+      if (!visible) {
+        elemento.style.display = "flex";
+        visible = true;
+      } else {
+        elemento.style.display = "none";
+        visible = false;
+      }
+    }
+    window.addEventListener("load", iniciar);
+  </script>
+</head>
+<body>
+  <header id="cabeceralogo">
+    <div>
+      <h1>ComteDec</h1>
+    </div>
+  </header>
+  <nav id="menuicono">
+    <img src="imagenesCom/menu.png" width="35" height="28" id="menu-img" alt="Menú">
+  </nav>
+  <nav id="menuprincipal">
+    <div>
+      <ul id="listamenu">
+        <li><a href="index.html"></a></li>
+        <li><a href="fotos.html"></a></li>
+        <li><a href="videos.html"></a></li>
+        <li><a href="contacto.html"></a></li>
+        <li><a href="algo.html"></a></li>
+        <li><a href="algo.html"></a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div>
+      <section id="articulosprincipales">
+        <article>
+          <h1>Post #1</h1>
+          <time datetime="2023-14-02" pubdate>
+            <div class="numerodia">14</div>
+            <div class="nombredia">Miercoles</div>
+          </time>
+          <p>Quiero desearles a todos un feliz 14 de febrero del 2024.</p>
+          <p>________________________________________________</p>
+<p>El propósito de esta página web es iniciar un proyecto inicial en el que compartiré de manera rutinaria los avances de lo que he realizado como aspirante a ingeniero de telemática en UPIITA, del INSTITUTO POLITECNICO NACIONAL, así como mis desarrollos como desarrollador independiente.</p>
+</body>
+            <img src="imagenesCom/rafa.jpg" height="200" alt="Imagen de Rafael">
+          </figure>
+        </article>
+        <!--<article>
+          <h1>¡Celebremos!</h1>
+          <time datetime="2020-10-09" pubdate>
+            <div class="numerodia">09</div>
+            <div class="nombredia">Viernes</div>
+          </time>
+          <p>ComteDec por Los hermanos DECIGA...</p>
+          <figure>
+            <img src="imagenesCom/o.png" height="200" alt="Imagen de celebración">
+          </figure>
+        </article> -->
+
+
+      </section>
+      <aside id="infoadicional">
+        <h1>Información adicional</h1>
+        <p>Notas</p>
+        <p>Avisos</p>
+      </aside> 
+    </div>
+  </main>
+  <footer id="pielogo">
+    <div>
+      <section class="seccionpie">
+        <h1>Sitio Web</h1>
+        <p><a href="index.html"></a></p>
+        <p><a href="fotos.html"> </a></p>
+        <p><a href="videos.html"></a></p>
+      </section>
+      <section class="seccionpie">
+        <h1></h1>
+        <p><a href="contacto.html"></a></p>
+      </section>
+      <section class="seccionpie">
+        <address>Edo, México</address>
+        <small>&copy; Derechos Reservados 2024</small>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>
+
